@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ------------------------------------ 
+   Tổng thể container 
+------------------------------------ */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120000px;
+    overflow-x: hidden;
+}
+
+/* ------------------------------------ 
+   Body
+------------------------------------ */
+.mainContent {
+    margin-top: 30px;
+}
+
+.bodyContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding-top: 12px;
+}
+
+/* ------------------------------------ 
+   Slide banner
+------------------------------------ */
+.imageBanner {
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerImage {
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.bannerText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffe304;
+    z-index: 10;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: translateY(-10px);
+}
+
+.bannerText h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #ffe304;
+}
+
+.bannerButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.bannerButton {
+    padding: 12px 25px;
+    background-color: #ffe304;
+    color: #000000;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bannerButton:hover {
+    background-color: #f0f0f0;
+    color: #ffe304;
+}
+
+.banner1 h1 {
+    font-size: 40px;
+}
+
+.banner1 .bannerButton {
+    background-color: #1016bc;
+    color: yellow;
+}
+
+.banner2 h1 {
+    font-size: 32px;
+}
+
+.banner2 .bannerButton {
+    background-color: #1016bc;
+    color: yellow;
+}
+
+/* ------------------------------------ 
+   Introduce center
+------------------------------------ */
+.introContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 12000px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.textContent {
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.registrationInfo {
+    background-color: #ffe304;
+    color: #1016bc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    max-width: 50%;
+}
+
+.registrationInfo h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.registrationInfo p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contactButton {
+    background-color: #fff;
+    color: #f9a825;
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    animation: blink 0.5s infinite; 
+}
+
+.contactButton:hover {
+    background-color: #f57f17;
+    color: white;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ff0404;
+        color: #1016bc;
+    }
+    50% {
+        background-color: #f57f17;
+        color: white;
+    }
+    100% {
+        background-color: #ff0404;
+        color: #1016bc;
+    }
+}

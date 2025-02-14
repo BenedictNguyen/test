@@ -1,0 +1,46 @@
+.postList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.postItem {
+    display: grid;
+    grid-template-columns: 11fr 3fr 100px 100px;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.headerRow {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.postColumn {
+    padding: 10px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.titleColumn, .imageColumn, .categoryColumn, .contentColumn {
+    width: 100%;
+    text-align: left;
+}
+
+.idColumn {
+    width: 100%;
+    text-align: left;
+}
+
+.contentColumn1 {
+    width: 50%;
+    text-align: left;
+}
+
+.postItem:hover {
+    background-color: transparent;
+}

@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 50px 0;
+  background-image: url('../../assets/img/ListeningPage/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin-top: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 2000px;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dataColumn h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #004680;
+}
+
+.newsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.newsItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.newsImage {
+  max-width: 150px;
+  height: auto;
+}
+
+.newsItem h2,
+.newsItem p {
+  margin: 0;
+  text-align: left;
+}
+
+.newsItem button {
+  margin-top: 10px;
+}
+
+.newsItem button {
+  padding: 10px 20px;
+  background-color: #1016bc;
+  color: yellow;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsItem button:hover {
+  background-color: yellow;
+  color: #1016bc;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.showMoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  padding-right: 2px;
+  background-color: #1016bc;
+  color: yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  animation: bounce 0.5s ease-in-out infinite;
+  margin: auto;
+}
+
+.showMoreButton:hover {
+  background-color: yellow;
+  color: #1016bc;
+}
+
+.showMoreButton .MuiSvgIcon-root {
+  margin-right: 4px;
+}

@@ -1,0 +1,53 @@
+.photoGalleryContent {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.galleryTitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: yellow;
+  background-color: #1016bc;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.sliderContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+}
+
+.imageSlider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.sliderItem {
+  flex: 0 0 33%;
+  padding: 0 8px;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sliderContainer {
+    height: 200px;
+  }
+
+  .sliderImage {
+    width: 80%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,476 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1016bc;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact,
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.navButton {
+    background-color: #1016bc;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 10px;
+}
+
+.adminButton {
+    background-color: #1016bc;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.accountCircle {
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+.adminDropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #ffffff;
+    padding: 5px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    margin-top: 1px;
+}
+
+.logoutButton {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.logoutButton:hover {
+    background-color: #0a2c7d;
+    color: white;
+}
+
+.sidebar {
+    width: auto;
+    background-color: #ffe304;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 12px;
+    height: 300px;
+}
+
+.menuItem {
+    margin-bottom: 20px;
+}
+
+.menuButton {
+    background-color: #ffe304;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.menuButton:hover {
+    background-color: #0a2c7d;
+}
+
+.submenu {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.submenu li {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.submenu li:hover {
+    color: #1016bc;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .searchBox {
+        margin-top: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        top: 80px;
+        padding: 10px;
+    }
+
+    .menuButton {
+        font-size: 14px;
+    }
+
+    .submenu li {
+        font-size: 16px;
+    }
+}
+
+.formContainer {
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 45px;
+    margin-left: 20px;
+    border-radius: 8px;
+    margin-left: calc(250px + 20px);
+    width: calc(100% - 200px - 40px);
+    box-sizing: border-box;
+}
+
+.formField {
+    margin-bottom: 15px;
+}
+
+.formField label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formField input,
+.formField select {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.taskbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.taskbar button {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.formField textarea {
+    width: 100%;
+    height: 200px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    .formField input,
+    .formField select {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .formField textarea {
+        height: 100px;
+        font-size: 14px;
+    }
+}
+
+.textEditor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+
+.toolbar button,
+.toolbar select,
+.toolbar input[type="color"] {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 14px;
+    height: 34px;
+    width: auto;
+}
+
+.toolbar input[type="color"] {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.toolbar button:hover,
+.toolbar select:hover,
+.toolbar input[type="color"]:hover {
+    background-color: #eaeaea;
+}
+
+.editableContent {
+    min-height: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-y: auto;
+}
+
+.imageUploadContainer {
+    margin-top: 20px;
+}
+
+.formField {
+    margin-bottom: 20px;
+}
+
+.uploadButton {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.uploadButton:hover {
+    background-color: #45a049;
+}
+
+.imageTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.tableHeader {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.tableColumn {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tableRow {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.tableRow .tableColumn {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tableColumn:nth-child(2) {
+    flex: 2;
+}
+
+.editButton {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    background-color: #0056b3;
+}
+
+.submitButton {
+    background-color: #1016bc;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #0a2c7d;
+}
+
+.postContent img {
+    max-width: 100%;
+    height: auto;
+}
+
+.postTable {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.postTable h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table td img {
+    max-width: 100px;
+    height: auto;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-column {
+    flex: 1;
+    padding: 10px;
+}
+
+table td,
+table th {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    table img {
+        width: 80px;
+    }
+}
+
+.contentEditable {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.toolbar button {
+    margin-right: 5px;
+}

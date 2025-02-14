@@ -1,0 +1,172 @@
+.ieltsjourneys-detail-body {
+    font-family: Arial, sans-serif;
+}
+
+.ieltsjourneys-detail-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ieltsjourneys-detail-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.ieltsjourneys-detail-column {
+    width: 60%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ieltsjourneys-detail-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffff;
+    background-image: url('../../assets/ContentPage/bg-news5.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ieltsjourneys-detail-heading {
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ieltsjourneys-detail-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.ieltsjourneys-detail-description-price {
+    font-size: 1rem;
+    color: green;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.ieltsjourneys-detail-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.ieltsjourneys-detail-list li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.ieltsjourneys-detail-contact-column {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ieltsjourneys-detail-contact-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.ieltsjourneys-detail-contact-details {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.ieltsjourneys-detail-contact-details-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ieltsjourneys-detail-contact-details-item svg {
+    font-size: 1.5rem;
+    color: navy;
+    margin-right: 10px;
+}
+
+.ieltsjourneys-detail-contact-details-item li {
+    font-size: 1rem;
+    color: #333;
+}
+
+.ieltsjourneys-detail-contact-details-item strong {
+    font-weight: bold;
+    color: navy;
+}
+
+.ieltsjourneys-detail-register-button {
+    background-color: #ffe304;
+    border: none;
+    padding: 12px 20px;
+    color: navy;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ieltsjourneys-detail-register-button:hover {
+    transform: scale(1.05);
+}
+
+.ieltsjourneys-detail-register-button a {
+    text-decoration: none;
+}
+
+.ieltsjourneys-detail-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ieltsjourneys-detail-list li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.ieltsjourneys-detail-heading {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.created-at {
+    bottom: 10px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}

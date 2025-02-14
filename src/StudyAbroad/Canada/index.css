@@ -1,0 +1,282 @@
+/* General container for the entire system */
+.canada-system-container {
+    font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.canada-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    height: 70px;
+    padding-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Main body layout */
+.canada-system-body {
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Title section */
+.canada-body-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+}
+
+/* Title styling for the body */
+.canada-body-title1, .canada-body-title2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* Style for the first title */
+.canada-body-title1 {
+    width: 60%;
+    padding-left: 12px;
+    color: #1016bc;
+    background: linear-gradient(to right, #fff, #1016bc);
+}
+
+/* Style for the second title */
+.canada-body-title2 {
+    width: 35%;
+    padding-left: 25px;
+    color: #ffe304;
+    background: linear-gradient(to right, #fff, #ffe304);
+}
+
+/* Layout for content and sidebar columns */
+.content-column {
+    flex: 2;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.sidebar-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Styling for the main title in content */
+.canada-title {
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Styling for the main image */
+.canada-image {
+    width: 50%;
+    height: auto;
+}
+
+/* Container for event content */
+.canada-info {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* Layout for information list */
+.information-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Column styling within information list */
+.information-column {
+    width: 48%;
+    padding: 10px;
+    gap: 20px;
+}
+
+/* Heading style for each information column */
+.information-column h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Styling for each item in the information list */
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Sidebar container layout */
+.sidebar-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sidebar rows with wrapping behavior */
+.sidebar-row {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Sidebar heading styling */
+.sidebar-row h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Sidebar list with scroll functionality */
+.sidebar-row ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Styling for each list item in the sidebar */
+.sidebar-row li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Sidebar title button (for event selection) */
+.sidebar-title-button {
+    color: black;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+}
+
+/* Sidebar image styling */
+.school-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.sidebar-school-image {
+    width: 100%;
+    max-width: 300px;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    object-fit: cover;
+}
+
+/* School info container in sidebar */
+.school-info {
+    flex-grow: 1;
+}
+
+.school-info h1 {
+    font-size: 15px;
+}
+
+.school-info p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .canada-system-body {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .content-column, .sidebar-column {
+        width: 100%;
+    }
+
+    .canada-image {
+        width: 100%;
+    }
+
+    .school-image {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Tablet (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .canada-system-body {
+        padding: 15px;
+        flex-direction: row;
+    }
+
+    .content-column, .sidebar-column {
+        width: 48%;
+    }
+
+    .canada-image {
+        width: 70%;
+    }
+
+    .school-image {
+        width: 80%;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    .canada-system-body {
+        padding: 20px;
+    }
+
+    .content-column, .sidebar-column {
+        width: 48%;
+    }
+
+    .canada-image {
+        width: 50%;
+    }
+
+    .school-image {
+        width: 50%;
+    }
+}
+
+/* Divider styling between content sections */
+.divider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ddd;
+}

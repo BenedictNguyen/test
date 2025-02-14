@@ -1,0 +1,67 @@
+/* Mùa xuân */
+.spring {
+    background-color: #e0f7fa; /* Nền xanh nhẹ */
+    animation: flowerBloom 3s infinite;
+  }
+  
+  @keyframes flowerBloom {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0); opacity: 0; }
+  }
+  
+  /* Mùa hè */
+  .summer {
+    background-color: #ffeb3b; /* Nền vàng tươi */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); /* Ánh nắng */
+    animation: summerGlow 1s infinite alternate;
+  }
+  
+  @keyframes summerGlow {
+    0% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); }
+    100% { box-shadow: 0 0 60px rgba(255, 255, 255, 0.9); }
+  }
+  
+  /* Mùa thu */
+  .autumn {
+    background-color: #ff7043; /* Nền cam đất */
+    animation: fallingLeaves 5s infinite;
+  }
+  
+  @keyframes fallingLeaves {
+    0% { transform: translateY(-100px); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+  
+  /* Mùa đông */
+  .winter {
+    background-color: #90caf9; /* Nền xanh nhạt */
+    position: relative;
+  }
+  
+  /* Hiệu ứng tuyết rơi */
+  .snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snowFall 10s linear infinite;
+  }
+  
+  @keyframes snowFall {
+    0% { transform: translateY(-10px); opacity: 0.8; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }  

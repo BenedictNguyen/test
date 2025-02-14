@@ -1,0 +1,44 @@
+.postList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.postItem {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 3fr 1fr 100px; /* Cập nhật lại số lượng cột */
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.headerRow {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.postColumn {
+    padding: 10px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.idColumn, .titleColumn { /* Thêm kiểu cho cột Tiêu Đề */
+    text-align: left;
+}
+
+.contentColumn1 {
+    width: 100%;
+    text-align: left;
+}
+
+.postItem:hover {
+    background-color: transparent;
+}
+.categoriesColumn {
+    text-align: left;
+    word-wrap: break-word;
+}

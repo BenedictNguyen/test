@@ -1,0 +1,87 @@
+/* Menu.css */
+.menuColumn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.menuItem {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menuButton {
+    display: flex;
+    background-color: #ffe304;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.menuItem .menuButton {
+    text-decoration: none;
+}
+
+.arrowDown {
+    font-size: 14px;
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.menuButton:hover {
+    background-color: #1016bc;
+    color: #ffe304;
+}
+
+.menuButton:focus {
+    outline: none;
+}
+
+.menuItem:hover .submenu {
+    display: block;
+    z-index: 9999;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.submenuButton {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: 3px;
+}
+
+.submenuButton:hover {
+    background-color: #1016bc;
+    color: #ffe304;
+}
+
+.menuItem a {
+    text-decoration: none; 
+}

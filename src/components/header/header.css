@@ -1,0 +1,90 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1016bc;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hotLineBox, .emailBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hotLine, .email {
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.socialIcon {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 300px;
+    background-color: white;
+}
+
+.searchInput {
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px 40px 10px 10px;
+    outline: none;
+}
+
+.searchButton {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.searchIcon {
+    color: black;
+    font-size: 24px;
+}
+
+.mainContent h1 {
+    font-size: 36px;
+    color: #1016bc;
+}
+
+.mainContent p {
+    font-size: 18px;
+    color: #333;
+}

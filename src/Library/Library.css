@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.library-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.library-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.library-title {
+    position: relative;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 50px 0;
+    background-image: url('../assets/img/ListeningPage/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.library-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 1200px;
+}
+
+.library-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.library-dataColumn h2,
+.library-utilityColumn h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #004680;
+  text-align: center;
+}
+
+.library-newsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.library-newsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+}
+
+.library-newsImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.library-newsItem button {
+  padding: 10px 20px;
+  background-color: #1016bc;
+  color: yellow;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.library-newsItem button:hover {
+  background-color: yellow;
+  color: red;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.library-showMoreButton {
+  padding: 10px 20px;
+  background-color: #1016bc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.library-showMoreButton:hover {
+  background-color: yellow;
+  color: red;
+}
+
+.library-utilityColumn {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.library-audioList {
+  list-style: none;
+  padding: 0;
+}
+
+.library-audioItem {
+  margin-bottom: 10px;
+}
+
+.library-audioItem h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #004680;
+  margin: 10px 0;
+}
